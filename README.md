@@ -59,7 +59,7 @@ Major issues identified by quick analysis are following in an descending order o
 ### Solution Approach Summary
 
 ### Utility tree
-![Utility tree](./diagrams/utility_tree.svg)
+![Utility tree](./diagrams/utility_tree_diagram.svg)
 
 ### Quality attributes walk-through
 
