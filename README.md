@@ -31,7 +31,7 @@ The system has some custom applications for all parties:
 
 Here is problem statement: 
 
-*Things have not been good with the Sysops Squad lately. The current trouble ticket system is a large monolithic application that was developed many years
+> *Things have not been good with the Sysops Squad lately. The current trouble ticket system is a large monolithic application that was developed many years
 ago. Customers are complaining that consultants are never showing up due to lost tickets, and often times the wrong consultant shows up to fix something
 they know nothing about. Customers and call-center staff have been complaining that the system is not always available for web-based or call-based problem
 ticket entry. Change is difficult and risky in this large monolith - whenever a change is made, it takes too long and something else usually breaks. Due to
