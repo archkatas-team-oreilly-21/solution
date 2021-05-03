@@ -58,6 +58,13 @@ Major issues identified by quick analysis are following in an descending order o
 
 ### Solution Approach Summary
 
+To tackle this problem we decided to follow further steps: 
+
+   - Identify quality attributes using existing system description and problem statement.
+   - Analyze architecture significant requirements (derived from functional, non-functional requirements and constraints) using Utility tree and rate them.
+   - After analysis we made decision to redesign existing monolith application into service based system providing desired system views in later chapter.
+   - Design migration plan using phased approach starting from implementation of most viable features and extending system capabilities gradually.
+
 ### Utility tree
 ![Utility tree](./diagrams/utility_tree_diagram.svg)
 
