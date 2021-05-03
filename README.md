@@ -4,9 +4,9 @@ Table of content:
 	- [Requirements interpretation](#requirements-interpretation)
 	- [Assumptions and constraints](#assumptions-and-constraints)
 - [Solution](#solution)
+        - [Solution Approach Summary](#solution-approach-summary)
 	- [Utility tree](#utility-tree)
 	- [Quality attributes walk-through](#quality-attributes-walk-through)
-	- [Solution Approach Summary](#solution-approach-summary)
 - [Views and Perspectives](#views-and-perspecties)
         - [System diagram](#system-diagram)
 	- [Data flow diagram](#data-flow-diagram)
@@ -56,12 +56,12 @@ Major issues identified by quick analysis are following in an descending order o
 
 ## Solution
 
+### Solution Approach Summary
+
 ### Utility tree
 ![Utility tree](./diagrams/utility_tree.svg)
 
 ### Quality attributes walk-through
-
-### Solution Approach Summary
 
 ## Views and Perspectives
 
