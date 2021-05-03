@@ -81,6 +81,40 @@ To tackle this problem we decided to follow further steps:
 
 #### Element catalog
 
+   - Ticket Onboarding UI - web/mobile app where client or call center representative can login and create ticket.
+     Chat bot - built-in app for simple solutions proposal based on client answers. Helps save time, resources and satisfy customers.
+
+   - Ticket Status UI - web/mobile app where client or call center representative can login and view ticket/add comments.
+
+   - Front Service - API service in charge of receival user requests, validating, preprocessing (e.g. ensure auth) them and forwarding to underlying services.
+
+   - Auth service - service providing auth layer for all incoming requests.
+
+   - Chat bot service - backend service providing questions, processing answers to find solution. Uses ML algorythms. Here just for reference, to be explained in details here: ADR 1.
+
+   - Ticket CRUD service - regular service for create, read, update, delete(soft) operations with tickets.
+
+   - Matching service - service for automatic matching incoming tickets to most suitable experts.
+
+   - Experts DB - here just for reference - see other diagram and ADR 2.
+
+   - Notification Service - Service for sending alerts and notifications.
+
+   - Expert Mobile App - Used by experts to recieve ticket assignment notifications and further ticket status updates, comments and knowledge base access. 
+
+   - Knowledge Base Service - used for experts lookup of solutions and filling knowledge base. Uses gamification techniques - giving bonus points for articles.
+
+   - Discrepancy service - looks for difference among created, assigned, resolved tickets and if something wrong found sends message to Healing service to try resolve issue.
+
+   - Healing service - set of ruls how to fix ticket reported by Discrepancy service, if not fixed - send alert to manager via Notifiation service.
+
+   - Manager UI - web/mobile app to run reports, receive alerts about problematic tickets, tools for manual ticket fix. All ticket actions audited. 
+
+   - Reporting service - used to retrieve report data and generate reports.
+
+   - Data Preparation service - used to prepare data for data warehouse.
+
+
 #### Context diagram
 
 #### Variability guide
