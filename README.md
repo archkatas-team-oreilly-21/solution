@@ -1,6 +1,6 @@
 Table of content: 
-- [Problem understanding](#problem-understanding)
-	- [Requirements analysis](#requirements-analysis)
+- [Problem analysis](#problem-analysis)
+	- [Requirements text analysis](#requirements-analysis)
 	- [Constraints](#constraints)
 - [Solution](#solution)
 	- [Utility tree](#utility-tree)
@@ -8,6 +8,12 @@ Table of content:
 	- [Solution Summary](#solution-summary)
 - [Views and Perspectives](#views-and-perspecties)
 
+
+## Problem analysis
+
+## Solution
+
+## Views and Perspectives
 
 ## Utility tree
 ![Utility tree](./diagrams/utility_tree.svg)
