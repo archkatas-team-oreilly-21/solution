@@ -1,6 +1,6 @@
 Table of content: 
 - [Problem analysis](#problem-analysis)
-        - [Existing system overview](#existing-system-overview)
+	- [Existing system overview](#existing-system-overview)
 	- [Requirements interpretation](#requirements-interpretation)
 	- [Assumptions and constraints](#assumptions-and-constraints)
 - [Solution](#solution)
