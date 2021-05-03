@@ -1,6 +1,6 @@
 Table of content: 
 - [Problem analysis](#problem-analysis)
-        - [Existing system overview]()
+        - [Existing system overview](#existing-system-overview)
 	- [Requirements interpretation](#requirements-interpretation)
 	- [Assumptions and constraints](#assumptions-and-constraints)
 - [Solution](#solution)
@@ -18,19 +18,39 @@ Table of content:
 
 ### Existing system overview
 
+The existing system in a nutshell is a ticketing system giving possibility for client to raise issues and matching experts to resolve those issues by multiple parameters (location, expertise, availabilty etc). It has administrators for user and content management as well as managers to monitor and analyze operations via reports.
 
+The system has some custom applications for all parties: 
+ - ticket entry system for clients (web and/or mobile app) 
+ - ticket entry system for call center staff (web app) 
+ - experts app for ticket handling and knowledge base read-write access (mobile app)
+ - admin console for user and content management, ticket read only search (web app) 
+ - managers app for reports running
 
 ### Requirements interpretation
 
-Things have not been good with the Sysops Squad lately. The current trouble ticket system is a large monolithic application that was developed many years
+'Things have not been good with the Sysops Squad lately. The current trouble ticket system is a large monolithic application that was developed many years
 ago. Customers are complaining that consultants are never showing up due to lost tickets, and often times the wrong consultant shows up to fix something
 they know nothing about. Customers and call-center staff have been complaining that the system is not always available for web-based or call-based problem
 ticket entry. Change is difficult and risky in this large monolith - whenever a change is made, it takes too long and something else usually breaks. Due to
 reliability issues, the monolithic system frequently “freezes up” or crashes - they think it’s mostly due a spike in usage and the number of customers using the
 system. If something isn’t done soon, Penultimate Electronics will be forced to abandon this very lucrative business line and fire all of the experts (including
-you, the architect).
+you, the architect).'
+
+Giving requirements above it is clear that due to growth or seasonal spikes in customer activities company struggles to deliver its core promises and is on the verge of complete shutdown of business operations and exit. 
+
+Major issues identified by quick analysis are following in an descending order of importance:
+
+ - Inability of existing technical infrastructure to accommodate current load and things getting worth during spikes of customer activity, resulting in low customer satisfaction.
+ - Failing business processes, e.g. inadequate matchmaking of skills to problems leading to wasted time, resources and business opportunities.
+ - It is hard to identify and eliminate system bugs due to lack of overall system transparency and poor ticket lifecycle management.
 
 ### Assumptions and constraints
+
+ It is clear that time is critical.
+ 
+ We assume that budget for change is not bounded meaning some reasonable limits.
+ 
 
 ## Solution
 
