@@ -75,6 +75,20 @@ To tackle this problem we decided to follow further steps:
 
 ### System diagram
 
+#### Primary presentation
+
+![System diagram](./diagrams/system.svg)
+
+#### Element catalog
+
+#### Context diagram
+
+#### Variability guide
+
+#### Rationale
+
+
+
 ### Data flow diagram
 
 ### Sequence diagrams
