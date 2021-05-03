@@ -13,6 +13,7 @@ Table of content:
 	- [Sequence diagrams](#sequence-diagrams)
 	- [Infrastructure diagrams](#infrastructure-diagrams)
 
+- [Migration plan](#migration-plan)
 
 ## Problem analysis
 
@@ -80,3 +81,4 @@ To tackle this problem we decided to follow further steps:
 
 ### Infrastructure diagrams
 
+## Migration plan
