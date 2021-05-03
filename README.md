@@ -10,8 +10,8 @@ Table of content:
 - [Views and Perspectives](#views-and-perspecties)
         - [System diagram](#system-diagram)
 	- [Data flow diagram](#data-flow-diagram)
-	- [Sequence diagrams] (#sequence-diagrams)
-	- [Infrastructure diagrams] (#infrastructure-diagrams)
+	- [Sequence diagrams](#sequence-diagrams)
+	- [Infrastructure diagrams](#infrastructure-diagrams)
 
 
 ## Problem analysis
