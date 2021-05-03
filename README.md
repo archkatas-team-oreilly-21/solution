@@ -29,6 +29,8 @@ The system has some custom applications for all parties:
 
 ### Requirements interpretation
 
+Here is problem statement: 
+
 *Things have not been good with the Sysops Squad lately. The current trouble ticket system is a large monolithic application that was developed many years
 ago. Customers are complaining that consultants are never showing up due to lost tickets, and often times the wrong consultant shows up to fix something
 they know nothing about. Customers and call-center staff have been complaining that the system is not always available for web-based or call-based problem
@@ -37,7 +39,7 @@ reliability issues, the monolithic system frequently “freezes up” or crashes
 system. If something isn’t done soon, Penultimate Electronics will be forced to abandon this very lucrative business line and fire all of the experts (including
 you, the architect).*
 
-Giving requirements above it is clear that due to growth or seasonal spikes in customer activities company struggles to deliver its core promises and is on the verge of complete shutdown of business operations and exit. 
+Giving statement above it is clear that due to growth or seasonal spikes in customer activities company struggles to deliver its core promises and is on the verge of complete shutdown of business operations and exit. 
 
 Major issues identified by quick analysis are following in an descending order of importance:
 
