@@ -5,11 +5,11 @@ Table of content:
 	- [Assumptions and constraints](#assumptions-and-constraints)
 - [Solution](#solution)
 	- [Solution Approach Summary](#solution-approach-summary)
+	- [System actors](#system-actors)
 	- [Utility tree](#utility-tree)
 	- [Quality attributes walk-through](#quality-attributes-walk-through)
 - [Views and Perspectives](#views-and-perspectives)
 	- [System diagram](#system-diagram)
-	- [Context diagram](#context-diagram)
 	- [Data flow diagram](#data-flow-diagram)
 	- [Sequence diagrams](#sequence-diagrams)
 	- [Infrastructure diagrams](#infrastructure-diagrams)
@@ -64,8 +64,19 @@ To tackle this problem we decided to follow further steps:
 
    - Identify quality attributes using existing system description and problem statement.
    - Analyze architecture significant requirements (derived from functional, non-functional requirements and constraints) using Utility tree and rate them.
-   - After analysis we made decision to redesign existing monolith application into service-based system providing desired system views in later chapter.
-   - Design migration plan using phased approach starting from implementation of most viable features and extending system capabilities gradually.
+   
+After analysis we made decision to:
+   - Make amendments in ticket processing flow introducing Customer success manager role.
+   - Redesign existing monolith application into service-based system providing desired system views in later chapter.
+   - Provide migration plan using phased approach starting from implementation of most viable features and extending system capabilities gradually.
+
+### System actors
+
+Current system inherited most of actors from previous system like customers, call center agents, managers, admins and experts.
+But admin responsibilities slightly changed in following way: 
+   - no more ticket access, only registration of experts, call center agents, managers and admins in system. Moreover we would like to propose self registration for experts with automatic experience evaluation and probation period (ADR 2)
+
+New role Customer success manager is in charge of tickets flow success guarantee - this role have access to special console providing monitoring of tickets state, alerts for broken tickets and ways to relaunch ticket inthe flow or manually assign it.
 
 ### Utility tree
 ![Utility tree](./diagrams/utility_tree_diagram.svg)
@@ -115,13 +126,15 @@ To tackle this problem we decided to follow further steps:
 
    - Data Preparation service - used to prepare data for data warehouse.
 
+#### Context diagram
+
+![Context diagram](./diagrams/context.svg)
+
 #### Variability guide
 
 #### Rationale
 
-### Context diagram
-
-![Context diagram](./diagrams/context.svg)
+Current system is evolution of monolith to service-based architecture with services decomposed and communicating via intermediary message queues. This gives effect of maintainability, evolvabilty, performance improvements.
 
 ### Data flow diagram
 
