@@ -125,6 +125,19 @@ New role Customer success manager is in charge of tickets flow success guarantee
    - Reporting service - used to retrieve report data and generate reports.
 
    - Data Preparation service - used to prepare data for data warehouse.
+  
+   - Client subscription UI - web/mobile app to let clients (customers) to subscribe on support plan and provide payment option.
+  
+   - Subscription Service - business logic for clients registration and subscription details.
+  
+   - Experts self-registration UI - web app which can register experts automatically, requesting expertise confirming docs and having human agent for resolution of corner cases for experts failed to be registered automatically.
+
+   - Experts self-registration service - service walking experts through self-registration and integrated with some 3d party services  to confirm uploaded documents validity.
+  
+   - Admin console - web app for admins to register admins, managers and other internal staff, give them corresponding permissins and content management system. 
+
+   - Admin service - service powering admin console.
+
 
 #### Context diagram
 
