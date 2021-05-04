@@ -10,7 +10,6 @@ Table of content:
 	- [Quality attributes walk-through](#quality-attributes-walk-through)
 - [Views and Perspectives](#views-and-perspectives)
 	- [System diagram](#system-diagram)
-	- [Context diagram](#context-diagram)
 	- [Data flow diagram](#data-flow-diagram)
 	- [Sequence diagrams](#sequence-diagrams)
 	- [Infrastructure diagrams](#infrastructure-diagrams)
