@@ -127,13 +127,15 @@ New role Customer success manager is in charge of tickets flow success guarantee
 
    - Data Preparation service - used to prepare data for data warehouse.
 
+### Context diagram
+
+![Context diagram](./diagrams/context.svg)
+
 #### Variability guide
 
 #### Rationale
 
-### Context diagram
-
-![Context diagram](./diagrams/context.svg)
+Current system is evolution of monolith to service-based architecture with services decomposed and communicating via intermediary message queues. This gives effect of maintainability, evolvabilty, performance improvements.
 
 ### Data flow diagram
 
