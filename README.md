@@ -7,7 +7,7 @@ Table of content:
 	- [Solution Approach Summary](#solution-approach-summary)
 	- [Utility tree](#utility-tree)
 	- [Quality attributes walk-through](#quality-attributes-walk-through)
-- [Views and Perspectives](#views-and-perspecties)
+- [Views and Perspectives](#views-and-perspectives)
 	- [System diagram](#system-diagram)
 	- [Context diagram](#context-diagram)
 	- [Data flow diagram](#data-flow-diagram)
@@ -20,7 +20,7 @@ Table of content:
 
 ### Existing system overview
 
-The existing system in a nutshell is a ticketing system giving possibility for client to raise issues and matching experts to resolve those issues by multiple parameters (location, expertise, availabilty etc). It has administrators for user and content management as well as managers to monitor and analyze operations via reports.
+The existing system in a nutshell is a ticketing system giving possibility for client to raise issues and matching experts to resolve those issues by multiple parameters (location, expertise, availability etc). It has administrators for user and content management as well as managers to monitor and analyze operations via reports.
 
 The system has some custom applications for all parties: 
  - ticket entry system for clients (web and/or mobile app) 
@@ -91,7 +91,7 @@ To tackle this problem we decided to follow further steps:
 
    - Auth service - service providing auth layer for all incoming requests.
 
-   - Chat bot service - backend service providing questions, processing answers to find solution. Uses ML algorythms. Here just for reference, to be explained in details here: ADR 1.
+   - Chat bot service - backend service providing questions, processing answers to find solution. Uses ML algorithms. Here just for reference, to be explained in details here: ADR 1.
 
    - Ticket CRUD service - regular service for create, read, update, delete(soft) operations with tickets.
 
@@ -101,13 +101,13 @@ To tackle this problem we decided to follow further steps:
 
    - Notification Service - Service for sending alerts and notifications.
 
-   - Expert Mobile App - Used by experts to recieve ticket assignment notifications and further ticket status updates, comments and knowledge base access. 
+   - Expert Mobile App - Used by experts to receive ticket assignment notifications and further ticket status updates, comments and knowledge base access. 
 
    - Knowledge Base Service - used for experts lookup of solutions and filling knowledge base. Uses gamification techniques - giving bonus points for articles.
 
    - Discrepancy service - looks for difference among created, assigned, resolved tickets and if something wrong found sends message to Healing service to try resolve issue.
 
-   - Healing service - set of ruls how to fix ticket reported by Discrepancy service, if not fixed - send alert to manager via Notifiation service.
+   - Healing service - set of rules how to fix ticket reported by Discrepancy service, if not fixed - send alert to manager via Notification service.
 
    - Manager UI - web/mobile app to run reports, receive alerts about problematic tickets, tools for manual ticket fix. All ticket actions audited. 
 
