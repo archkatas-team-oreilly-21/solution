@@ -127,7 +127,7 @@ To tackle this problem we decided to follow further steps:
 
 ![Data flow diagram](./diagrams/data-flow.svg)
 
-*NOTE: Banking and discrepancy service is not included for the sake of simplicity*
+*NOTE: Banking and discrepancy service are not included for the sake of simplicity*
 
 ### Sequence diagrams
 
