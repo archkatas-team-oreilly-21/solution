@@ -127,7 +127,7 @@ New role Customer success manager is in charge of tickets flow success guarantee
 
    - Data Preparation service - used to prepare data for data warehouse.
 
-### Context diagram
+#### Context diagram
 
 ![Context diagram](./diagrams/context.svg)
 
