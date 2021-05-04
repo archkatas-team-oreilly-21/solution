@@ -9,6 +9,7 @@ Table of content:
 	- [Quality attributes walk-through](#quality-attributes-walk-through)
 - [Views and Perspectives](#views-and-perspecties)
 	- [System diagram](#system-diagram)
+	- [Context diagram](#context-diagram)
 	- [Data flow diagram](#data-flow-diagram)
 	- [Sequence diagrams](#sequence-diagrams)
 	- [Infrastructure diagrams](#infrastructure-diagrams)
@@ -44,7 +45,7 @@ Giving statement above it is clear that due to growth or seasonal spikes in cust
 
 Major issues identified by quick analysis are following in an descending order of importance:
 
- - Inability of existing technical infrastructure to accommodate current load and things getting worth during spikes of customer activity, resulting in low customer satisfaction.
+ - Inability of existing technical infrastructure to accommodate current load and things getting worse during spikes of customer activity, resulting in low customer satisfaction.
  - Failing business processes, e.g. inadequate matchmaking of skills to problems leading to wasted time, resources and business opportunities.
  - It is hard to identify and eliminate system bugs due to lack of overall system transparency and poor ticket lifecycle management.
 
@@ -63,7 +64,7 @@ To tackle this problem we decided to follow further steps:
 
    - Identify quality attributes using existing system description and problem statement.
    - Analyze architecture significant requirements (derived from functional, non-functional requirements and constraints) using Utility tree and rate them.
-   - After analysis we made decision to redesign existing monolith application into service based system providing desired system views in later chapter.
+   - After analysis we made decision to redesign existing monolith application into service-based system providing desired system views in later chapter.
    - Design migration plan using phased approach starting from implementation of most viable features and extending system capabilities gradually.
 
 ### Utility tree
@@ -114,16 +115,17 @@ To tackle this problem we decided to follow further steps:
 
    - Data Preparation service - used to prepare data for data warehouse.
 
-
-#### Context diagram
-
 #### Variability guide
 
 #### Rationale
 
+### Context diagram
 
+![Context diagram](./diagrams/context.svg)
 
 ### Data flow diagram
+
+![Data flow diagram](./diagrams/data-flow.svg)
 
 ### Sequence diagrams
 
