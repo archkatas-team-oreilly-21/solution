@@ -102,7 +102,7 @@ New role Customer success manager is in charge of tickets flow success guarantee
 
    - Auth service - service providing auth layer for all incoming requests.
 
-   - Chat bot service - backend service providing questions, processing answers to find solution. Uses ML algorithms. Here just for reference, to be explained in details here: ADR 1.
+   - Chat bot service - backend service providing questions, processing answers to find solution. Uses ML algorythms. Here just for reference, to be explained in details here: [ADR 1](doc/adr/0001-chat-bot-service.md).
 
    - Ticket CRUD service - regular service for create, read, update, delete(soft) operations with tickets.
 
