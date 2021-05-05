@@ -77,6 +77,9 @@ After analysis we made decision to:
    - Make amendments in ticket processing flow introducing Customer success manager role.
    - Redesign existing monolith application into service-based system providing desired system views in later chapter.
    - Provide migration plan using phased approach starting from implementation of most viable features and extending system capabilities gradually.
+   - Improve experts onboarding flow by providing automated verification of qualification with admins for corner cases.
+   - Provide system health console and alerting.
+   - Automatically find tickets in broken state and fix them wih rules engine or Customer success manager.
 
 <br/>
 
@@ -84,7 +87,7 @@ After analysis we made decision to:
 
 Current system inherited most of actors from previous system like customers, call center agents, managers, admins and experts.
 But admin responsibilities slightly changed in following way: 
-   - no more ticket access, only registration of experts, call center agents, managers and admins in system. Moreover we would like to propose self registration for experts with automatic experience evaluation and probation period (ADR 2)
+   - no more ticket access, only registration of experts, call center agents, managers and admins in system. Moreover we would like to propose self registration for experts with automatic experience evaluation and probation period.
 
 New role Customer success manager is in charge of tickets flow success guarantee - this role have access to special console providing monitoring of tickets state, alerts for broken tickets and ways to relaunch ticket inthe flow or manually assign it.
 
@@ -157,8 +160,6 @@ New role Customer success manager is in charge of tickets flow success guarantee
     
    - Customer Success Management Console - web/mobile app to receive alerts about tickets out of normal processing, contact customers, manually assign experts and reset ticket flows.
 
-### Variability guide
-
 ### Rationale
 
 Current system is evolution of monolith to service-based architecture with services decomposed and communicating via intermediary message queues. This gives effect of maintainability, evolvabilty, performance improvements.
@@ -209,10 +210,6 @@ Decision was taken to deploy services in AWS to save time and having reasonable 
 ### Primary presentation
 
 ![Deployment diagrams](./diagrams/aws.svg)
-
-### Element catalog
-
-### Context diagram
 
 ### Variability guide
 
