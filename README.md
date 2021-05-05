@@ -163,6 +163,8 @@ Current system is evolution of monolith to service-based architecture with servi
 
 Decision was taken to deploy services in AWS to save time and having reasonable compute, network and storage capacity.
 
+*NOTE: This is not exhaustive services deployment guide, just basic idea, AWS VPC, AWS IAM and some subsystems omitted but ideally need to be added*
+
 #### Primary presentation
 
 ![Deployment diagrams](./diagrams/aws.svg)
@@ -173,6 +175,11 @@ Decision was taken to deploy services in AWS to save time and having reasonable 
 
 #### Variability guide
 
+Other public clouds still have reached AWS maturity so they not an option at the moment.
+If customer company has significant compute, network and storage capacities then hybrid or on-premises options may be considered still looking more time consuming and less efficient for medium-sized business.
+
 #### Rationale
+
+Cloud based deployment gives lots of possibilities to scale, monitor, update and orchestrate system without extra investments in super qualified development team or hardware update, providing reasonable time to market timeline.
 
 ## Migration plan
