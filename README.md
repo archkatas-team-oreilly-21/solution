@@ -134,7 +134,7 @@ New role Customer success manager is in charge of tickets flow success guarantee
   
    - Expert Availability Service - experts may update their current state like new skills, vacation etc to provide better matching.
   
-   - Admin console - web app for admins to register admins, managers and other internal staff, give them corresponding permissins and content management system. 
+   - Admin console - web app for admins to register admins, managers and other internal staff, give them corresponding permissions and content management system. 
 
    - Admin service - service powering admin console.
     
