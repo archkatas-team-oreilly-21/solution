@@ -108,8 +108,6 @@ New role Customer success manager is in charge of tickets flow success guarantee
 
    - Matching service - service for automatic matching incoming tickets to most suitable experts.
 
-   - Experts DB - here just for reference - see other diagram and ADR 2.
-
    - Notification Service - Service for sending alerts and notifications.
 
    - Expert Mobile App - Used by experts to receive ticket assignment notifications and further ticket status updates, comments and knowledge base access. 
@@ -133,6 +131,8 @@ New role Customer success manager is in charge of tickets flow success guarantee
    - Experts self-registration UI - web app which can register experts automatically, requesting expertise confirming docs and having human agent for resolution of corner cases for experts failed to be registered automatically.
 
    - Experts self-registration service - service walking experts through self-registration and integrated with some 3d party services  to confirm uploaded documents validity.
+  
+   - Expert Availability Service - experts may update their current state like new skills, vacation etc to provide better matching.
   
    - Admin console - web app for admins to register admins, managers and other internal staff, give them corresponding permissins and content management system. 
 
