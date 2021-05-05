@@ -77,6 +77,9 @@ After analysis we made decision to:
    - Make amendments in ticket processing flow introducing Customer success manager role.
    - Redesign existing monolith application into service-based system providing desired system views in later chapter.
    - Provide migration plan using phased approach starting from implementation of most viable features and extending system capabilities gradually.
+   - Improve experts onboarding flow by providing automated verification of qualification with admins for corner cases.
+   - Provide system health console and alerting.
+   - Automatically find tickets in broken state and fix them wih rules engine or Customer success manager.
 
 <br/>
 
