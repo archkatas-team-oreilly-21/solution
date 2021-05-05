@@ -157,12 +157,6 @@ New role Customer success manager is in charge of tickets flow success guarantee
     
    - Customer Success Management Console - web/mobile app to receive alerts about tickets out of normal processing, contact customers, manually assign experts and reset ticket flows.
 
-<br/>
-
-## Context diagram
-
-![Context diagram](./diagrams/context.svg)
-
 ### Variability guide
 
 ### Rationale
@@ -173,11 +167,40 @@ Current system is evolution of monolith to service-based architecture with servi
 
 ## Data flow diagram
 
+### Primary presentation
 ![Data flow diagram](./diagrams/data-flow.svg)
 
 *NOTE: Banking and discrepancy service are not included for the sake of simplicity*
 
-### Infrastructure diagrams
+### Element catalog
+ - customer DB - AWS RDS PostgreSQL entity
+ - survey DB - AWS RDS PostgreSQL entity
+ - ticket DB - AWS RDS PostgreSQL entity
+ - product DB - AWS RDS PostgreSQL entity
+ - billing DB - AWS RDS PostgreSQL entity
+ - expert DB - AWS RDS PostgreSQL entity
+ - manager DB - AWS RDS PostgreSQL entity
+ - knowledge base - Elastic Search
+ - ticket, expert, survey, billing, analytics DB - AWS Redshift
+
+### Context diagram
+
+![Context diagram](./diagrams/context.svg)
+
+### Variability guide
+
+Data would be exchanged in JSON format, as opposed to binary, its simpler to implement and it would be sufficient in terms of performance.
+All the primary entities would be parts of a single AWS RDS PostgreSQL, so it would be much easier to migrate from existing system.
+Knowledge base would be maintained in ElasticSearch for quick information access.
+AWS Redshift would be used for analytics and reporting.
+
+### Rationale
+
+Single vertically scaled RDS in conjunction with ElasticSearch and Data warehouse is a good tradeoff between migration simplicity and overall system performance.
+
+<br/>
+
+## Infrastructure diagrams
 
 Decision was taken to deploy services in AWS to save time and having reasonable compute, network and storage capacity.
 
