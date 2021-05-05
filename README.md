@@ -84,7 +84,7 @@ After analysis we made decision to:
 
 Current system inherited most of actors from previous system like customers, call center agents, managers, admins and experts.
 But admin responsibilities slightly changed in following way: 
-   - no more ticket access, only registration of experts, call center agents, managers and admins in system. Moreover we would like to propose self registration for experts with automatic experience evaluation and probation period (ADR 2)
+   - no more ticket access, only registration of experts, call center agents, managers and admins in system. Moreover we would like to propose self registration for experts with automatic experience evaluation and probation period.
 
 New role Customer success manager is in charge of tickets flow success guarantee - this role have access to special console providing monitoring of tickets state, alerts for broken tickets and ways to relaunch ticket inthe flow or manually assign it.
 
