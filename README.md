@@ -1,4 +1,4 @@
-Table of content: 
+Table of contents: 
 - [Problem analysis](#problem-analysis)
 	- [Existing system overview](#existing-system-overview)
 	- [Requirements interpretation](#requirements-interpretation)
@@ -16,9 +16,12 @@ Table of content:
 
 - [Migration plan](#migration-plan)
 
-## Problem analysis
+<br/>
+<br/>
 
-### Existing system overview
+# Problem analysis
+
+## Existing system overview
 
 The existing system in a nutshell is a ticketing system giving possibility for client to raise issues and matching experts to resolve those issues by multiple parameters (location, expertise, availability etc). It has administrators for user and content management as well as managers to monitor and analyze operations via reports.
 
@@ -29,7 +32,9 @@ The system has some custom applications for all parties:
  - admin console for user and content management, ticket read only search (web app) 
  - managers app for reports running
 
-### Requirements interpretation
+<br/>
+
+## Requirements interpretation
 
 Here is problem statement: 
 
@@ -49,16 +54,20 @@ Major issues identified by quick analysis are following in an descending order o
  - Failing business processes, e.g. inadequate matchmaking of skills to problems leading to wasted time, resources and business opportunities.
  - It is hard to identify and eliminate system bugs due to lack of overall system transparency and poor ticket lifecycle management.
 
-### Assumptions and constraints
+<br/>
+
+## Assumptions and constraints
 
  It is clear that time is critical.
  
  We assume that budget for change is not bounded meaning some reasonable limits.
  
+<br/>
+<br/>
 
-## Solution
+# Solution
 
-### Solution Approach Summary
+## Solution Approach Summary
 
 To tackle this problem we decided to follow further steps: 
 
@@ -70,7 +79,9 @@ After analysis we made decision to:
    - Redesign existing monolith application into service-based system providing desired system views in later chapter.
    - Provide migration plan using phased approach starting from implementation of most viable features and extending system capabilities gradually.
 
-### System actors
+<br/>
+
+## System actors
 
 Current system inherited most of actors from previous system like customers, call center agents, managers, admins and experts.
 But admin responsibilities slightly changed in following way: 
@@ -78,20 +89,27 @@ But admin responsibilities slightly changed in following way:
 
 New role Customer success manager is in charge of tickets flow success guarantee - this role have access to special console providing monitoring of tickets state, alerts for broken tickets and ways to relaunch ticket inthe flow or manually assign it.
 
-### Utility tree
+<br/>
+
+## Utility tree
 ![Utility tree](./diagrams/utility_tree_diagram.svg)
 
-### Quality attributes walk-through
+<br/>
 
-## Views and Perspectives
+## Quality attributes walk-through
 
-### System diagram
+<br/>
+<br/>
 
-#### Primary presentation
+# Views and Perspectives
+
+## System diagram
+
+### Primary presentation
 
 ![System diagram](./diagrams/system.svg)
 
-#### Element catalog
+### Element catalog
 
    - Ticket Onboarding UI - web/mobile app where client or call center representative can login and create ticket.
      Chat bot - built-in app for simple solutions proposal based on client answers. Helps save time, resources and satisfy customers.
@@ -140,46 +158,56 @@ New role Customer success manager is in charge of tickets flow success guarantee
     
    - Customer Success Management Console - web/mobile app to receive alerts about tickets out of normal processing, contact customers, manually assign experts and reset ticket flows.
 
+<br/>
 
-#### Context diagram
+## Context diagram
 
 ![Context diagram](./diagrams/context.svg)
 
-#### Variability guide
+### Variability guide
 
-#### Rationale
+### Rationale
 
 Current system is evolution of monolith to service-based architecture with services decomposed and communicating via intermediary message queues. This gives effect of maintainability, evolvabilty, performance improvements.
 
-### Data flow diagram
+<br/>
+
+## Data flow diagram
 
 ![Data flow diagram](./diagrams/data-flow.svg)
 
 *NOTE: Banking and discrepancy service are not included for the sake of simplicity*
 
-### Sequence diagrams
+<br/>
 
-### Infrastructure diagrams
+## Sequence diagrams
+
+<br/>
+
+## Infrastructure diagrams
 
 Decision was taken to deploy services in AWS to save time and having reasonable compute, network and storage capacity.
 
 *NOTE: This is not exhaustive services deployment guide, just basic idea, AWS VPC, AWS IAM and some subsystems omitted but ideally need to be added*
 
-#### Primary presentation
+### Primary presentation
 
 ![Deployment diagrams](./diagrams/aws.svg)
 
-#### Element catalog
+### Element catalog
 
-#### Context diagram
+### Context diagram
 
-#### Variability guide
+### Variability guide
 
 Other public clouds still have not reached AWS maturity so they not an option at the moment.
 If customer company has significant compute, network and storage capacities then hybrid or on-premises options may be considered still looking more time consuming and less efficient for medium-sized business.
 
-#### Rationale
+### Rationale
 
 Cloud based deployment gives lots of possibilities to scale, monitor, update and orchestrate system without extra investments in super qualified development team or hardware update, providing reasonable time to market timeline.
 
-## Migration plan
+<br/>
+<br/>
+
+# Migration plan
