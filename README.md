@@ -11,7 +11,6 @@ Table of content:
 - [Views and Perspectives](#views-and-perspectives)
 	- [System diagram](#system-diagram)
 	- [Data flow diagram](#data-flow-diagram)
-	- [Sequence diagrams](#sequence-diagrams)
 	- [Infrastructure diagrams](#infrastructure-diagrams)
 
 - [Migration plan](#migration-plan)
@@ -157,8 +156,6 @@ Current system is evolution of monolith to service-based architecture with servi
 
 *NOTE: Banking and discrepancy service are not included for the sake of simplicity*
 
-### Sequence diagrams
-
 ### Infrastructure diagrams
 
 Decision was taken to deploy services in AWS to save time and having reasonable compute, network and storage capacity.
@@ -180,6 +177,6 @@ If customer company has significant compute, network and storage capacities then
 
 #### Rationale
 
-Cloud based deployment gives lots of possibilities to scale, monitor, update and orchestrate system without extra investments in super qualified development team or hardware update, providing reasonable time to market timeline.
+Cloud based deployment gives lots of possibilities to scale, monitor, update and orchestrate system without extra investments into super qualified development team or hardware update, providing reasonable time to market timeline.
 
 ## Migration plan
