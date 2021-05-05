@@ -175,7 +175,7 @@ Decision was taken to deploy services in AWS to save time and having reasonable 
 
 #### Variability guide
 
-Other public clouds still have reached AWS maturity so they not an option at the moment.
+Other public clouds still have not reached AWS maturity so they not an option at the moment.
 If customer company has significant compute, network and storage capacities then hybrid or on-premises options may be considered still looking more time consuming and less efficient for medium-sized business.
 
 #### Rationale
