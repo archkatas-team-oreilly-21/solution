@@ -11,7 +11,6 @@ Table of contents:
 - [Views and Perspectives](#views-and-perspectives)
 	- [System diagram](#system-diagram)
 	- [Data flow diagram](#data-flow-diagram)
-	- [Sequence diagrams](#sequence-diagrams)
 	- [Infrastructure diagrams](#infrastructure-diagrams)
 
 - [Migration plan](#migration-plan)
@@ -178,13 +177,7 @@ Current system is evolution of monolith to service-based architecture with servi
 
 *NOTE: Banking and discrepancy service are not included for the sake of simplicity*
 
-<br/>
-
-## Sequence diagrams
-
-<br/>
-
-## Infrastructure diagrams
+### Infrastructure diagrams
 
 Decision was taken to deploy services in AWS to save time and having reasonable compute, network and storage capacity.
 
@@ -205,9 +198,40 @@ If customer company has significant compute, network and storage capacities then
 
 ### Rationale
 
-Cloud based deployment gives lots of possibilities to scale, monitor, update and orchestrate system without extra investments in super qualified development team or hardware update, providing reasonable time to market timeline.
+Cloud based deployment gives lots of possibilities to scale, monitor, update and orchestrate system without extra investments into super qualified development team or hardware update, providing reasonable time to market timeline.
 
 <br/>
 <br/>
 
 # Migration plan
+
+To be sure that system meets functional requirements, quality attributes and time constraints it is advised to implement described above system in several phases.
+
+1 Phase
+
+This phase main goal to provide clients new interface and make A-B testing. 
+Data about experts to be imported from old system.
+Only newly registered customers redirected to this new system.
+
+Services to be implemented: Ticket Onboarding UI, Ticket Status UI, Front Service, Auth service, Ticket CRUD service, Matching service, Notification Service, Expert Mobile App, Knowledge Base Service, Client subscription UI, Subscription Service.
+
+2 Phase
+
+This phase main goal to provide control plain. ( may be started in parallel when some parts of 1 phase done).
+After this phase is done it is good time to extend A-B testing audience.
+
+Services to be implemented: Manager UI, Reporting service, Data Preparation service, Admin console, Admin service. 
+
+3 Phase
+
+This phase main goal to provide some advanced techniques to improve system.
+
+Services to be implemented: Chat bot UI, Chat bot service, Discrepancy service, Healing service, Experts self-registration UI, Experts self-registration service, Expert Availability Service, Customer Success Management Console.
+
+4 Phase
+
+After previous phases implemented, tested, bugs fixed old system should be marked obsolete and all public IPs be deleted from DNS. All data about users and opened tickets transferred to the new system and after some grace period old system to be shut down.
+
+![Migration plan](./diagrams/phases.svg)
+
+
