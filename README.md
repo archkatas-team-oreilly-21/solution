@@ -137,6 +137,8 @@ New role Customer success manager is in charge of tickets flow success guarantee
    - Admin console - web app for admins to register admins, managers and other internal staff, give them corresponding permissins and content management system. 
 
    - Admin service - service powering admin console.
+    
+   - Customer Success Management Console - web/mobile app to receive alerts about tickets out of normal processing, contact customers, manually assign experts and reset ticket flows.
 
 
 #### Context diagram
@@ -158,5 +160,19 @@ Current system is evolution of monolith to service-based architecture with servi
 ### Sequence diagrams
 
 ### Infrastructure diagrams
+
+Decision was taken to deploy services in AWS to save time and having reasonable compute, network and storage capacity.
+
+#### Primary presentation
+
+![Deployment diagrams](./diagrams/aws.svg)
+
+#### Element catalog
+
+#### Context diagram
+
+#### Variability guide
+
+#### Rationale
 
 ## Migration plan
