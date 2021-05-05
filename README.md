@@ -7,7 +7,6 @@ Table of contents:
 	- [Solution Approach Summary](#solution-approach-summary)
 	- [System actors](#system-actors)
 	- [Utility tree](#utility-tree)
-	- [Quality attributes walk-through](#quality-attributes-walk-through)
 - [Views and Perspectives](#views-and-perspectives)
 	- [System diagram](#system-diagram)
 	- [Data flow diagram](#data-flow-diagram)
@@ -96,9 +95,6 @@ New role Customer success manager is in charge of tickets flow success guarantee
 ## Utility tree
 ![Utility tree](./diagrams/utility_tree_diagram.svg)
 
-<br/>
-
-## Quality attributes walk-through
 
 <br/>
 <br/>
