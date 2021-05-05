@@ -159,11 +159,9 @@ New role Customer success manager is in charge of tickets flow success guarantee
 
 <br/>
 
-## Context diagram
+### Context diagram
 
 ![Context diagram](./diagrams/context.svg)
-
-### Variability guide
 
 ### Rationale
 
@@ -177,7 +175,7 @@ Current system is evolution of monolith to service-based architecture with servi
 
 *NOTE: Banking and discrepancy service are not included for the sake of simplicity*
 
-### Infrastructure diagrams
+## Infrastructure diagrams
 
 Decision was taken to deploy services in AWS to save time and having reasonable compute, network and storage capacity.
 
@@ -186,10 +184,6 @@ Decision was taken to deploy services in AWS to save time and having reasonable 
 ### Primary presentation
 
 ![Deployment diagrams](./diagrams/aws.svg)
-
-### Element catalog
-
-### Context diagram
 
 ### Variability guide
 
